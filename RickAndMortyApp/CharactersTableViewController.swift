@@ -9,7 +9,7 @@ import UIKit
 
 class CharactersTableViewController: UITableViewController {
     
-    private var characters: [Character]?
+    private var characters: [Character] = []
     
 
     override func viewDidLoad() {
@@ -22,17 +22,15 @@ class CharactersTableViewController: UITableViewController {
     // MARK: - Table view data source
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let count = characters?.count else { return 0 }
-        return count
+        characters.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        if let character = characters?[indexPath.row] {
+        let character = characters[indexPath.row]
             var content = cell.defaultContentConfiguration()
             content.text = character.name
             content.secondaryText = character.type
-            
             DispatchQueue.global().async {
                 guard let stringUrl = character.image else { return }
                 guard let imageUrl = URL(string: stringUrl) else { return }
@@ -41,8 +39,6 @@ class CharactersTableViewController: UITableViewController {
                     content.image = UIImage(data: imageData)
                 }
             }
-            
-        }
         return cell
     }
     
