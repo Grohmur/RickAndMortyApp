@@ -5,9 +5,10 @@
 //  Created by Михаил Зверьков on 16.01.2022.
 //
 
-import Foundation
 
-
+struct MainJSON: Decodable {
+    let results: [Character]?
+}
 
 struct Character: Decodable {
     let name: String?

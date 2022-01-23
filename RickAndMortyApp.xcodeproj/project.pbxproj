@@ -13,9 +13,8 @@
 		31004FE8279424BC00D3B615 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31004FE7279424BC00D3B615 /* Assets.xcassets */; };
 		31004FEB279424BD00D3B615 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 31004FE9279424BD00D3B615 /* LaunchScreen.storyboard */; };
 		31004FF3279426F300D3B615 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31004FF2279426F300D3B615 /* Character.swift */; };
-		31004FF52794285000D3B615 /* CharacterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31004FF42794285000D3B615 /* CharacterCell.swift */; };
-		31004FF727942A0300D3B615 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31004FF627942A0300D3B615 /* MainTableViewController.swift */; };
-		31004FF927942CEB00D3B615 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31004FF827942CEB00D3B615 /* Network.swift */; };
+		31004FF927942CEB00D3B615 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31004FF827942CEB00D3B615 /* NetworkingManager.swift */; };
+		3153F15C279C6EF200134B31 /* CharactersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3153F15B279C6EF200134B31 /* CharactersTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +26,8 @@
 		31004FEA279424BD00D3B615 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		31004FEC279424BD00D3B615 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		31004FF2279426F300D3B615 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
-		31004FF42794285000D3B615 /* CharacterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterCell.swift; sourceTree = "<group>"; };
-		31004FF627942A0300D3B615 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
-		31004FF827942CEB00D3B615 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		31004FF827942CEB00D3B615 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		3153F15B279C6EF200134B31 /* CharactersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,12 +61,11 @@
 			isa = PBXGroup;
 			children = (
 				31004FF2279426F300D3B615 /* Character.swift */,
-				31004FF42794285000D3B615 /* CharacterCell.swift */,
 				31004FDE279424BC00D3B615 /* AppDelegate.swift */,
-				31004FF827942CEB00D3B615 /* Network.swift */,
+				31004FF827942CEB00D3B615 /* NetworkingManager.swift */,
 				31004FE0279424BC00D3B615 /* SceneDelegate.swift */,
+				3153F15B279C6EF200134B31 /* CharactersTableViewController.swift */,
 				31004FE4279424BC00D3B615 /* Main.storyboard */,
-				31004FF627942A0300D3B615 /* MainTableViewController.swift */,
 				31004FE7279424BC00D3B615 /* Assets.xcassets */,
 				31004FE9279424BD00D3B615 /* LaunchScreen.storyboard */,
 				31004FEC279424BD00D3B615 /* Info.plist */,
@@ -148,10 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				31004FF3279426F300D3B615 /* Character.swift in Sources */,
-				31004FF52794285000D3B615 /* CharacterCell.swift in Sources */,
-				31004FF927942CEB00D3B615 /* Network.swift in Sources */,
+				3153F15C279C6EF200134B31 /* CharactersTableViewController.swift in Sources */,
+				31004FF927942CEB00D3B615 /* NetworkingManager.swift in Sources */,
 				31004FDF279424BC00D3B615 /* AppDelegate.swift in Sources */,
-				31004FF727942A0300D3B615 /* MainTableViewController.swift in Sources */,
 				31004FE1279424BC00D3B615 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
